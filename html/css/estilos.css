@@ -2,7 +2,7 @@
 Por etiqueta
 */
 body{
-    height:calc((768/1080)*900px);
+    height:900px;
     background-color: rgba(0, 0, 0, 1);
     background-image: url(../img/fondo.png);
     background-size: 100% 100%;

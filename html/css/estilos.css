@@ -1,0 +1,83 @@
+/*
+Por etiqueta
+*/
+body{
+    height:calc((768/1080)*900px);
+    background-color: rgba(0, 0, 0, 1);
+    background-image: url(../img/fondo.png);
+    background-size: 100% 100%;
+}
+h1{
+    color: #7e0707;
+    font-weight: lighter;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 100px;
+}
+h1 span{
+    color: white;
+}
+button{
+    background-color:burlywood;
+    color:black;
+}
+li{
+    color: white;
+}
+/*
+Por id (#)
+*/
+#btnInicio{
+    width: 300px;
+    height: 60px;
+    margin-left: 40%;
+    background-color: white;
+    color: #7e0707;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 30px;
+    box-shadow: 21px 10px 96px 15px rgba(255,255,255,0.79);
+}
+/*
+Por clase (.)
+*/
+.activo{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#barril1{
+    bottom: 2%;
+    left:35%;
+    width:150px;
+    position: absolute;
+    transform: rotate(18deg);
+}
+#barril2{
+    bottom: 2%;
+    left: 65%;
+    width:150px;
+    position: absolute;
+    transform: rotate(342deg);
+}
+#barril1 img, #barril2 img{
+    width:100%;
+}
+#chango{
+    position:absolute;
+    left: 35%;
+    top:15%;
+    width:200px;
+}
+#chango img{
+    width: 100%;
+}
+#titulo{
+    top: 10px;
+    right:2%;
+    width:150px;
+    position: absolute;
+}
+#titulo img{
+    width: 100%;
+}

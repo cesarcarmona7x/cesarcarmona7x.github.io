@@ -2,7 +2,7 @@
 Por etiqueta
 */
 body{
-    height:calc((768px/1080px)*900px);
+    height:900px;
     background-color: rgba(0, 0, 0, 1);
     background-image: url(../img/fondo.png);
     background-size: 100% 100%;
@@ -67,7 +67,7 @@ Por clase (.)
     position:absolute;
     left: 35%;
     top:15%;
-    width:200px;
+    width:300px;
 }
 #chango img{
     width: 100%;

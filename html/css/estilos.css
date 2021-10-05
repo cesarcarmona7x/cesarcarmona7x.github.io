@@ -52,6 +52,9 @@ Por clase (.)
     width:150px;
     position: absolute;
     transform: rotate(18deg);
+    animation-name: barrilAnim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 #barril2{
     bottom: 2%;
@@ -65,9 +68,12 @@ Por clase (.)
 }
 #chango{
     position:absolute;
-    left: 35%;
-    top:15%;
-    width:300px;
+    left: 20%;
+    top:0%;
+    width:200px;
+    animation-name: changoAnim;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
 }
 #chango img{
     width: 100%;
@@ -77,7 +83,43 @@ Por clase (.)
     right:2%;
     width:150px;
     position: absolute;
+    transition: 2s ease-in all;
 }
 #titulo img{
     width: 100%;
+}
+#titulo:hover{
+    transform: scale(1.5);
+    cursor:pointer;
+    border-bottom: 2px solid white;
+    border-radius:50px;
+}
+@keyframes changoAnim {
+    0%{
+        left: 20%;
+        top: 0%;
+    }
+    20%{
+        left: 40%;
+        top: 10%;
+    }
+    30%{
+        left: 40%;
+        top:15%;
+    }
+    100%{
+        left: 40%;
+        top:22%;
+    }
+}
+@keyframes barrilAnim {
+    0%{
+        transform: rotate(18deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(18deg);
+    }
 }

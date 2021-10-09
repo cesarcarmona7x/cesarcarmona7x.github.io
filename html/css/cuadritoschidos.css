@@ -1,0 +1,136 @@
+*{
+    margin:0px;
+}
+.contenedorprincipal{
+    width:100%;
+}
+#topbar{
+    height:50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(183, 126, 211);
+}
+#topbar #contenedor{
+    margin-left:75px;
+    margin-right:75px;
+    height:100%;
+}
+#topbar #contenedor .cajas{
+    background-color: rgb(228, 91, 42);
+    height: 100%;
+}
+#topbar #contenedor #box1{
+    float:left;
+    width:150px;
+}
+#topbar #contenedor #box2{
+    float:right;
+    width:300px;
+}
+#yellowbox{
+    background-color: rgb(242, 200, 33);
+    height:600px;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+#yellowbox #contenedor{
+    background-color: rgb(228, 91, 42);
+    height:100%;
+    margin-left:20%;
+    margin-right:20%;
+}
+#purplebox{
+    height:480px;
+    padding-top:60px;
+    padding-bottom:60px;
+    background-color: #400040;
+}
+#purplebox #contenedor{
+    height:100%;
+    margin-left:5%;
+    margin-right:5%;
+}
+#purplebox #contenedor .roundbox{
+    float: left;
+    width:calc(25% - 25px - 2px);
+    height:100%;
+    margin-right:25px;
+    background-color: #202020;
+    border-radius: 10px;
+    border: 1px solid #808080;
+    border-bottom-width: 5px;
+}
+#greyboxes{
+    height:596px;
+    background-color: green;
+    border-top: 2px solid #c5c5c5;
+    border-bottom: 2px solid #c5c5c5;
+}
+#greyboxes .box{
+    float:left;
+    width:50%;
+    height:100%;
+}
+#greyboxes .box:first-child{
+    background-color: gray;
+}
+#greyboxes .box:last-child{
+    background-color: #202020;
+}
+#purpleandbluestripes{
+    height:600px;
+}
+#purpleandbluestripes #contenedor{
+    height:100%;
+}
+#purpleandbluestripes #contenedor .stripes{
+    width:21.25%;
+    height: 100%;
+    margin-right: 5%;
+    float: left;
+}
+#purpleandbluestripes #contenedor .stripes:last-child{
+    margin-right: 0px;
+}
+#purpleandbluestripes #contenedor .stripes #stripe1{
+    background-color: #400040;
+    width:50%;
+    height: 100%;
+    float:left;
+}
+#purpleandbluestripes #contenedor .stripes #stripe2{
+    background-color: rgb(0, 0, 49);
+    width:50%;
+    height:100%;
+    float:left;
+}
+#giantpurpleline{
+    height:100px;
+    background-color: #200020;
+}
+#finalbox{
+    height:640px;
+    line-height: 160px;
+    padding-top:30px;
+    padding-bottom: 30px;
+    background-color: #444;
+}
+#finalbox #contenedor{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#finalbox #contenedor .box{
+    width:300px;
+    height:150px;
+    display:inline-block;
+    background-color: #202;
+}
+#finalbox #contenedor .box:nth-child(2),#finalbox #contenedor .box:last-child{
+    float:right;
+}
+#finalbox #contenedor .box:nth-of-type(3){
+    width:150px;
+    margin-left: calc(50% - 75px);
+    transform: rotate(45deg);
+    margin-right: auto;
+}

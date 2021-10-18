@@ -57,10 +57,12 @@ header nav ul li a:hover{
 section#main{
     background-color: black;
     height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 #main video{
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 #main #overlay{
     width:100%;
@@ -99,4 +101,34 @@ section#main{
 a.btn{
     text-decoration: none;
     color: white;
+}
+#about, #contact{
+    width: 80%;
+    padding-left:10%;
+    padding-right:10%;
+    height: 700px;
+}
+#about > h2{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+#about .col, #contact .col{
+    float:left;
+    width: 50%;
+    text-align: justify;
+}
+#about .col img{
+    width: 70%;
+    display: block;
+    margin: 20px auto;
+}
+#about .col p{
+    margin-top: 50px;
+}
+#about > .col > h2{
+    font-weight: lighter;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
 }

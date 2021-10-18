@@ -18,12 +18,14 @@ header{
     background-color: var(--main-color);
     display: flex;
     justify-content: space-between;
+    position:fixed;
+    z-index:99999;
 }
 header #logo{
     margin:10px;
     margin-left:10%;
     width: 200px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Festive', sans-serif;
 }
 header nav{
     margin: 10px;
@@ -59,4 +61,42 @@ section#main{
 #main video{
     width: 100%;
     height: 100%;
+}
+#main #overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,0.8);
+    z-index: 3;
+}
+#main #overlay h2{
+    margin-top: 300px;
+    color: white;
+    text-align: center;
+    font-size: 6rem;
+}
+#main #overlay h3{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.btn{
+    width:180px;
+    height:50px;
+    border:none;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.btn-primary{
+    background-color: var(--main-color);
+    text-transform: uppercase;
+}
+a.btn{
+    text-decoration: none;
+    color: white;
 }

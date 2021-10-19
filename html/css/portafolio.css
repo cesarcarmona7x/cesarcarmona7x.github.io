@@ -98,11 +98,11 @@ section#main{
     background-color: var(--main-color);
     text-transform: uppercase;
 }
-a.btn{
+a.btn, button.btn{
     text-decoration: none;
     color: white;
 }
-#about, #contact{
+#about, #contact, #projects{
     width: 80%;
     padding-left:10%;
     padding-right:10%;
@@ -131,4 +131,114 @@ a.btn{
     font-weight: lighter;
     font-size: 2rem;
     font-family: 'Open Sans', sans-serif;
+}
+#projects > h2{
+    font-family: 'Open Sans', sans-serif;
+}
+#projects #projectlist{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#projects #projectlist .project{
+    width: 25%;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+#projects #projectlist .project img{
+    width:100%;
+}
+#projects #projectlist .project div{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#projects #projectlist .project div #projectname{
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+#projects #projectlist .project div #projectdescription{
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+#projects #projectlist .project button{
+    width: 80%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:20px;
+    margin-bottom: 20px;
+    text-transform: none;
+    background-color: var(--main-color);
+}
+#frasechida{
+    height: 200px;
+    background-image: url(../img/html.png);;
+}
+#frasechida h2{
+    display: block;
+    line-height: 200px;
+    text-align: center;
+    font-size: 3rem;
+    margin:auto;
+    color:white;
+}
+#contact{
+    margin-top:100px;
+}
+#contact .col fieldset{
+    border: none;
+    margin-right: 100px;
+}
+#contact .col legend{
+    display: block;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#contact .col{
+    height: 100%;
+}
+#contact .col label, #contact .col input[type=text], #contact .col textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    margin-left: 15px;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+#contact .col label{
+    font-size: 1rem;
+    padding-top: 20px;
+}
+#contact .col input[type=text]{
+    padding: 10px;
+}
+#contact .col textarea{
+    padding: 10px;
+}
+#contact .col button{
+    margin-left:15px;
+    margin-top: 20px;
+    background-color: var(--main-color);
+}
+footer{
+    padding: auto;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+footer p{
+    width: 100%;
+    height:50%;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
 }

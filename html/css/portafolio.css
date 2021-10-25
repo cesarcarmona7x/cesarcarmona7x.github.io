@@ -21,6 +21,12 @@ header{
     position:fixed;
     z-index:99999;
 }
+header #menuMovil{
+    display: none;
+}
+header #menuWeb{
+    display: block;
+}
 header #logo{
     margin:10px;
     margin-left:10%;
@@ -106,7 +112,7 @@ a.btn, button.btn{
     width: 80%;
     padding-left:10%;
     padding-right:10%;
-    height: 700px;
+    min-height: 700px;
 }
 #about > h2{
     text-align: center;

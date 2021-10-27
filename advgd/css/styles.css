@@ -1,0 +1,113 @@
+:root{
+    --main-color: #6BBA0F;
+    --text-color-1: #202020;
+    --text-color-2: #2A7092;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    font-family: 'Lato', sans-serif;
+}
+h1,h2,h3,h4{
+    font-family: 'Montserrat', cursive;
+}
+header{
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    z-index:99999;
+}
+header #logo{
+    margin:10px;
+    width: 8rem;
+    margin-left:5%;
+}
+header #logo img{
+    width: 100%;
+}
+header nav, header #userbrief{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header #userbrief{
+    margin-right: 5%;
+}
+header nav ul, header #userbrief ul{
+    height: 100%;
+}
+header nav ul li, header #userbrief ul li{
+    display: block;
+    float: left;
+    height: 100%;
+    list-style: none;
+    margin-top: 0.8rem;
+    padding: 5px;
+    transition: 0.5s ease-in all;
+}
+header nav ul li{
+    margin-right: 30px;
+}
+header #userbrief ul li{
+    margin-right: 3px;
+}
+header nav ul li a,header nav ul li a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--text-color-1);
+    box-sizing: border-box;
+}
+header nav ul li a:hover{
+    color: var(--main-color);
+    opacity: 0.8;
+    background-color: white;
+    color: var(--main-color);
+    border-radius: 5px;
+}
+header #userbrief ul li img{
+    width: 2rem;
+}
+header #userbrief ul li #user_profile_picture{
+    border-radius: 100%;
+}
+#main{
+    height:700px;
+    background-color: black;
+}
+#main #newestgame{
+    width: 100%;
+    height: 100%;
+}
+#main #newestgame img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    margin-bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--main-color);
+}
+footer>div{
+    width: 100%;
+    height: 100%;
+}
+footer>div #company-data{
+    text-align: center;
+}
+footer>div #company-data img{
+    width: 12rem;
+}
+footer>div #social-media{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}

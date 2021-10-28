@@ -86,7 +86,7 @@ header #userbrief ul li #user_profile_picture{
     background-color: black;
 }
 #allgames{
-    height: 700px;
+    height: 1000px;
 }
 #aboutustext{
     width: 100%;
@@ -181,18 +181,6 @@ header #userbrief ul li #user_profile_picture{
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
-}
-.productitem.overlay{
-    width:100%;
-    height:100%;
-    position:absolute;
-    left:0;
-    top:0;
-    background-color: rgba(0,0,0,0.5);
-}
-.openoverlay{
-    opacity: 1;
-    display: block;
 }
 .bottom-text h1{
     font-size: 3rem;

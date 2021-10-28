@@ -17,6 +17,7 @@
         width: 100%;
     }
     header nav, header #userbrief{
+        display: block;
         width: 75%;
         margin-left: 12.5%;
         margin-right: 12.5%;

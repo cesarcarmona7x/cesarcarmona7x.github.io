@@ -29,6 +29,10 @@
         flex-direction: column;
         align-items: stretch;
     }
+    header #userbrief #username{
+        width: 50%;
+        text-align: right;
+    }
     header nav ul, header #userbrief ul{
         width: 100%;
     }
@@ -40,5 +44,63 @@
         margin-top: 0.8rem;
         padding: 5px;
         transition: 0.5s ease-in all;
+    }
+    .bottom-text{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        bottom: 12.5%;
+    }
+    #news{
+        width: 100%;
+        min-height: 700px;
+        background-color: black;
+    }
+    #newslist{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .newsitem{
+        width:100%;
+        height: 50%;
+        background-color: rgba(255,255,255,0.4);
+    }
+    #aboutustext{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+        text-align: justify;
+        top: 12.5%;
+        color: var(--text-color-2);
+    }
+    #aboutustext p{
+        font-size: 1.1rem;
+    }
+    #newslist,#productlist{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #productlist .productitem{
+        width: 100%;
+        height: 150px;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .productitem img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

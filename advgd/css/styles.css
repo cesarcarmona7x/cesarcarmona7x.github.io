@@ -58,6 +58,9 @@ header nav ul li{
 header #userbrief ul li{
     margin-right: 3px;
 }
+header #userbrief #username{
+    text-align: right;
+}
 header nav ul li a,header nav ul li a{
     font-size: 1.3rem;
     text-decoration: none;
@@ -77,43 +80,17 @@ header #userbrief ul li img{
 header #userbrief ul li #user_profile_picture{
     border-radius: 100%;
 }
-#main,#news,#aboutus{
+#main,#news,#aboutus,#allgames{
     width: 100%;
-    height:350px;
+    height:700px;
     background-color: black;
 }
-.backgroundimage{
-    float:left;
-    width: 100%;
-    height: 100%;
+#allgames{
+    height: 700px;
 }
-.backgroundimage img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.blackoverlay{
-    width: 100%;
-    height: 100%;
-    position:relative;
-    background-color:rgba(0,0,0,0.5);
-}
-.whiteoverlay{
-    width: 100%;
-    height: 100%;
-    position:relative;
-    background-color:rgba(255,255,255,0.5);
-}
-.bottom-text{
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    bottom: 5%;
-}
-#
 #aboutustext{
     width: 100%;
+    height: 100%;
     position: absolute;
     left: 0%;
     right: 0%;
@@ -128,6 +105,94 @@ header #userbrief ul li #user_profile_picture{
 }
 #aboutustext p{
     font-size: 1.3rem;
+}
+#news{
+    min-height: 700px;
+}
+.backgroundimage{
+    float:left;
+    width: 100%;
+    height: 100%;
+}
+.backgroundimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blackoverlay{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left:0;
+    background-color:rgba(0,0,0,0.5);
+    z-index: 10;
+}
+.whiteoverlay{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background-color:rgba(255,255,255,0.5);
+}
+.bottom-text{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+}
+#newslist,#productlist{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.newsitem{
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width:50%;
+    min-height:100px;
+    text-align: justify;
+    background-color: rgba(255,255,255,0.4);
+    font-family: 'Lato', sans-serif;
+}
+.newsitem #newstitle{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size:1.3rem;
+}
+.newsitem #content,.newsitem #content{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+}
+#productlist .productitem{
+    width: 25%;
+    height: 150px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.productitem img{
+    width:100%;
+    height: 75%;
+    object-fit: cover;
+}
+.productitem p{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+.productitem.overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,0.5);
+}
+.openoverlay{
+    opacity: 1;
+    display: block;
 }
 .bottom-text h1{
     font-size: 3rem;

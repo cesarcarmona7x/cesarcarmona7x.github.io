@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -38,7 +39,7 @@
         </nav>
         <div id="userbrief">
             <ul>
-                <li>
+                <li id="username">
                     <a>Admin</a>
                 </li>
                 <li>
@@ -60,7 +61,7 @@
             <img src="./img/image_video_game_mario.jpg" alt="">
         </div>
         <div class="blackoverlay">
-            <div class="bottom-text">
+            <div class="bottom-text" data-aos="fade-up">
                 <h1>
                     Super Mariano 34
                 </h1>
@@ -68,7 +69,7 @@
             </div>
         </div>
     </section>
-    <section id="news">
+    <section id="news" data-aos="flip-left">
         <div class="backgroundimage">
             <img src="./img/mario-1557240_1920.jpg" alt="">
         </div>
@@ -80,14 +81,32 @@
                 <br>
                 <div id="newslist">
                     <div class="newsitem">
-                        <p></p>
+                        <h3 id="newstitle">Murciélago Hindú Anda Triste</h3>
+                        <br>
+                        <p id="content">El veloz murciélago hindú comía triste cardillo 
+                            y kiwi. La cigüeña tocaba el saxofón detrás del 
+                            palenque de paja.</p>
+                        <br>
+                        <p id="date">
+                            Publicado el 24/11/2022 a las 07:23:33 MST
+                        </p>
                     </div>
-                    <div class="newsitem"></div>
+                    <div class="newsitem">
+                        <h3 id="newstitle">Murciélago Hindú Anda Suelto</h3>
+                        <br>
+                        <p id="content">El veloz murciélago hindú comía feliz cardillo 
+                            y kiwi. La cigüeña tocaba el saxofón detrás del 
+                            palenque de paja.</p>
+                        <br>
+                        <p id="date">
+                            Publicado el 16/02/2023 a las 16:23:13 MST
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="aboutus">
+    <section id="aboutus" data-aos="zoom-in">
         <div class="backgroundimage">
             <img src="./img/luigi-1558024_1920.jpg" alt="">
         </div>
@@ -106,7 +125,35 @@ una opción para aquellos que no gustan de dicha tienda.
             </div>
         </div>
     </section>
-
+    <section id="allgames" data-aos="flip-down">
+        <div class="backgroundimage">
+            <img src="./img/luigi-1558024_1920.jpg" alt="">
+        </div>
+        <div class="whiteoverlay">
+            <div id="aboutustext">
+                <h2>
+                    TODOS LOS PRODUCTOS
+                </h2>
+                <br>
+                <div id="productlist">
+                    <div class="productitem">
+                        <img src="./img/products/thumbnail/220px-Clannad_game_cover.jpg" alt="Clannad">
+                        <p>
+                            CLANNAD
+                        </p>
+                    </div>
+                    <div class="productitem" id="mariano">
+                        <img src="./img/products/thumbnail/mario pirata 1.png" alt="Super Mariano">
+                        <p>Super Mariano 34</p>
+                    </div>
+                    <div class="productitem" id="tetris">
+                        <img src="./img/products/thumbnail/tetris.png" alt="Tetris">
+                        <p>Otro clon de Tetris</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div>
             <div id="company-data">
@@ -120,5 +167,12 @@ una opción para aquellos que no gustan de dicha tienda.
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slidedrawer.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="./js/transitions.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

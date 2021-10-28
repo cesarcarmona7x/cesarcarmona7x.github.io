@@ -1,0 +1,7 @@
+@media (max-width: 500px){
+    header #logo{
+        margin:10px;
+        margin-left:5%;
+        width: 100%;
+    }
+}

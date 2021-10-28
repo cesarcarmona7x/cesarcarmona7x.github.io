@@ -1,8 +1,9 @@
 @media (max-width: 500px){
-    header #logo{
-        margin:10px;
-        margin-left:5%;
+    header{
         width: 100%;
-        display: block;
+        background-color: var(--main-color);
+        display: flex;
+        justify-content: stretch;
+        z-index:99999;
     }
 }

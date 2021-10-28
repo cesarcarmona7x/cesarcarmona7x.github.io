@@ -1,4 +1,4 @@
-@media (pointer: coarse){
+@media (pointer: coarse) or (max-width: 500px){
     header{
         width: 100%;
         background-color: var(--main-color);

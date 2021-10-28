@@ -6,4 +6,9 @@
         justify-content: stretch;
         z-index:99999;
     }
+    header #logo{
+        margin:10px;
+        width: 100%;
+        margin-left:5%;
+    }
 }

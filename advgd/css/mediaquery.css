@@ -1,4 +1,15 @@
 @media only screen and (max-width: 500px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        overflow-x: hidden;
+        background-color: rgb(238, 238, 238);
+        font-family: 'Lato', sans-serif;
+    }
     header{
         width: 100%;
         background-color: var(--main-color);
@@ -30,7 +41,6 @@
         align-items: stretch;
     }
     header #userbrief #username{
-        width: 50%;
         text-align: right;
     }
     header nav ul, header #userbrief ul{

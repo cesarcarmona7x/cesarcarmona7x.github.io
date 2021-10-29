@@ -9,7 +9,8 @@
     box-sizing: border-box;
 }
 body{
-    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
     background-color: rgb(238, 238, 238);
     font-family: 'Lato', sans-serif;
 }
@@ -43,7 +44,7 @@ header #userbrief{
 header nav ul, header #userbrief ul{
     height: 100%;
 }
-header nav ul li, header #userbrief ul li{
+header nav ul li, header #userbrief ul li, footer #footer-content .footer-column ul li{
     display: block;
     float: left;
     height: 100%;
@@ -86,6 +87,7 @@ header #userbrief ul li #user_profile_picture{
     background-color: black;
 }
 #allgames{
+    width: 100%;
     height: 1000px;
 }
 #aboutustext{
@@ -123,7 +125,6 @@ header #userbrief ul li #user_profile_picture{
     width: 100%;
     height: 100%;
     position:absolute;
-    left:0;
     background-color:rgba(0,0,0,0.5);
     z-index: 10;
 }
@@ -192,22 +193,39 @@ header #userbrief ul li #user_profile_picture{
 footer{
     margin-bottom: 0;
     width: 100%;
+    height: 100px;
     padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: var(--main-color);
 }
-footer>div{
+footer #footer-content{
     width: 100%;
-    height: 100%;
-}
-footer>div #company-data{
-    text-align: center;
-}
-footer>div #company-data img{
-    width: 12rem;
-}
-footer>div #social-media{
-    width: 30%;
     height: 100%;
     display: flex;
     justify-content: space-between;
+}
+footer #footer-content .footer-column{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+}
+footer #footer-content .footer-column:last-child{
+    width: 30%;
+    height: 100%;
+    margin-right: 0px;
+}
+footer #footer-content .footer-column ul{
+    height: 100%;
+}
+footer #footer-content .footer-column ul li{
+    width: 30%;
+    height: 100%;
+    margin-top: 0px;
+}
+footer #footer-content .footer-column ul li img{
+    height: 100%;
+}
+.footer-logo{
+    width: 12rem;
 }

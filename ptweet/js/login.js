@@ -5,15 +5,29 @@ window.onload = function () {
     boton.addEventListener('click', function () {
         let username = tfUsername.value;
         let password = tfPassword.value;
-        if (username.trim() == "admin" && password.trim() == "123") {
-            alert("LISTO CALISTO");
+        let arregloUsuarios = [
+            { id: 1, nombre: "Federica PLuche", imagen: "fede.jpg", username: "fedep", password: "123" },
+            { id: 2, nombre: "Don Camerino", imagen: "dc.jpg", username: "camerino", password: "123" },
+            { id: 3, nombre: "Vivi", imagen: "vivi.jpg", username: "vivi", password: "123" },
+        ];
+        var encontro=false;
+        arregloUsuarios.forEach(usuario => {
+            if (username.trim() == usuario.username && password.trim() == usuario.password) {
+                encontro=true;
+                localStorage.setItem("usuario",JSON.stringify(usuario));
+                let fecha=new Date();
+                localStorage.setItem("fecha",fecha.getFullYear()+"/"+(fecha.getMonth()+1)+"/"+fecha.getDate());
+            }
+        });
+        if(encontro){
+            location.href="./index.html";
         }
         else {
             document.getElementById("error").innerHTML = "Credenciales incorrectas";
             tfUsername.style.backgroundColor = '#FF0000';
             tfPassword.style.backgroundColor = '#FF0000';
         }
-    });
+});
 }
 function limpiar() {
     var tfUsername = document.getElementById("username");

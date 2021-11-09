@@ -15,6 +15,7 @@ window.onload=()=>{
             };
             arrayTweets.push(obj);
             crearPost();
+            txtTweet.value="";
         }
     });
     txtTweet.addEventListener('keyup',(e)=>{

@@ -8,7 +8,7 @@ window.onload = function () {
         let arregloUsuarios = [
             { id: 1, nombre: "Federica PLuche", imagen: "fede.jpg", username: "fedep", password: "123" },
             { id: 2, nombre: "Don Camerino", imagen: "dc.jpg", username: "camerino", password: "123" },
-            { id: 3, nombre: "Vivi", imagen: "vivi.jpg", username: "vivi", password: "123" },
+            { id: 3, nombre: "Bibi", imagen: "bibi.jpg", username: "bibi", password: "123" },
         ];
         var encontro=false;
         arregloUsuarios.forEach(usuario => {

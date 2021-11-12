@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
 :root{
     --p-amarillo:#f3d13f;
     --p-morado:#c516c5;
@@ -139,16 +139,15 @@ main{
     border-radius:50%;
     border:2px solid var(--p-amarillo);
 }
-#newPost, .post{
-   
+#newPost, .post, .comment{
     padding: 10px;
     display: flex;
     flex-direction: row;
 }
-#newPost >div:first-child,.post >div:first-child{
+#newPost >div:first-child,.post >div:first-child, .comment >div:first-child{
     flex: 0.2;
 }
-#newPost >div:last-child, .post >div:last-child{
+#newPost >div:last-child, .post >div:last-child, .comment >div:last-child{
     flex: 2;
     padding: 5px;
 }
@@ -170,12 +169,18 @@ main{
     min-height: 200px;
     padding: 5px;
 }
-.post >div:last-child{
+.post >div:last-child, .comment>div:last-child{
     color:white;
 }
-.post >div:last-child h2 span:last-child{
+.post >div:last-child>div:nth-child(3){
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.post >div:last-child h2 span:last-child, .comment >div:last-child h2 span:last-child{
     color:var(--gris);
+    font-size: 1.3rem;
 }
 .post .textTweet{
- padding-top: 10px;
+    padding-top: 10px;
 }

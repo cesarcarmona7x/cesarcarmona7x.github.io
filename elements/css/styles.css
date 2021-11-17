@@ -111,6 +111,9 @@
   .periodic-table .polyatomic-non-metal {
     background: hsl(358, 60%, 56%);  
   }
+  ol{
+    counter-reset: element 0;
+  }
   #data{
       display:none;
       position: absolute;
@@ -144,10 +147,16 @@
     .periodic-table > li:before {
       font-size: 1rem;
     }
-    .periodic-table > li:nth-child(n+58):nth-last-child(n+48) {
+    .periodic-table > li:nth-child(n+58):nth-last-child(n+49) {
     grid-row-start: auto !important;
   }
-    .periodic-table > li:nth-child(n+90):nth-last-child(n+16) {
+  .periodic-table:last-of-type > li:nth-child(n+58):nth-last-child(n+48) {
+    grid-row-start: auto !important;
+  }
+    .periodic-table > li:nth-child(n+90):nth-last-child(n+17) {
+      grid-row-start: auto !important;
+    }
+    .periodic-table:last-of-type > li:nth-child(n+90):nth-last-child(n+16) {
       grid-row-start: auto !important;
     }
     .periodic-table:before {

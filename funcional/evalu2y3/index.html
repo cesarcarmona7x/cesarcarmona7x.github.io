@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de la NASA</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <ul class="nav nav-tabs navbar-light bg-light" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#yoda"
+                role="tab" aria-selected="true">Traducir Inglés-Yoda</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#pirate" role="tab"
+                aria-selected="false">Traducir Inglés-Pirata</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#morse" role="tab"
+                aria-selected="false">Traducir Inglés-Morse</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#doge" role="tab"
+                aria-selected="false">Traducir Inglés-Perro</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="nav-tabContent">
+        <div id="yoda" class="tab-pane fade show active">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form id="translationForm" class="m-3" data-inserted="0">
+                            <div class="row m-2">
+                                <label for="tbYoda">Texto a traducir:</label>
+                                <input class="form-control" type="text" name="tbYoda" id="tbYoda">
+                            </div>
+                            <div class="row m-2">
+                                <button type="button" class="btn btn-primary" id="btnTranslateYoda">Traducir</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <div class="m-3">
+                            <p class="row text-center m-2">Traducción a Yoda (ordenar según crea correcto)</p>
+                            <div class="row m-2">
+                                <ul class="nav nav-pills draggable-list" id="translationOrderYoda">
+
+                                </ul>
+                            </div>
+                            <div class="row m-2">
+                                <button type="button" class="btn btn-primary"
+                                    id="btnCheckTranslationsYoda">Verificar</button>
+                                <p id="resultYoda"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pirate" class="tab-pane fade">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form id="translationForm" class="m-3" data-inserted="0">
+                            <div class="row m-2">
+                                <label for="tbPirate">Texto a traducir:</label>
+                                <input class="form-control" type="text" name="tbPirate" id="tbPirate">
+                            </div>
+                            <div class="row m-2">
+                                <button type="button" class="btn btn-primary" id="btnTranslatePirate">Traducir</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <div class="m-3">
+                            <p class="row text-center m-2">Traducción a Pirata (ordenar según crea correcto)</p>
+                            <div class="row m-2">
+                                <ul class="nav nav-pills draggable-list" id="translationOrderPirate">
+
+                                </ul>
+                            </div>
+                            <div class="row m-2">
+                                <button type="button" class="btn btn-primary"
+                                    id="btnCheckTranslationsPirate">Verificar</button>
+                                <p id="resultPirate"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="morse" class="tab-pane fade">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form id="translationForm" class="m-3" data-inserted="0">
+                            <div class="row m-2">
+                                <label for="tbMorse">Texto a traducir:</label>
+                                <input class="form-control" type="text" name="tbMorse" id="tbMorse">
+                            </div>
+                            <div class="row m-2">
+                                <button type="button" class="btn btn-primary" id="btnTranslateMorse">Traducir</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <div class="m-3">
+                            <p class="row text-center m-2">Traducción a Morse (ordenar según crea correcto)</p>
+                            <div class="navbar" class="row m-2">
+                                <ul class="nav nav-pills draggable-list" id="translationOrderMorse">
+
+                                </ul>
+                            </div>
+                            <div class="row m-2">
+                                <button type="button" class="btn btn-primary"
+                                    id="btnCheckTranslationsMorse">Verificar</button>
+                                <p id="resultMorse"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="doge" class="tab-pane fade">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form id="translationForm" class="m-3" data-inserted="0">
+                            <div class="row m-2">
+                                <label for="tbDoge">Texto a traducir:</label>
+                                <input class="form-control" type="text" name="tbDoge" id="tbDoge">
+                            </div>
+                            <div class="row m-2">
+                                <button type="button" class="btn btn-primary" id="btnTranslateDoge">Traducir</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <div class="m-3">
+                            <p class="row text-center m-2">Traducción a Perro (ordenar según crea correcto)</p>
+                            <div class="row m-2">
+                                <ul class="nav nav-pills draggable-list" id="translationOrderDoge">
+
+                                </ul>
+                            </div>
+                            <div class="row m-2">
+                                <button type="button" class="btn btn-primary"
+                                    id="btnCheckTranslationsDoge">Verificar</button>
+                                <p id="resultDoge"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="./js/funtranslations.js"></script>
+</body>
+
+</html>

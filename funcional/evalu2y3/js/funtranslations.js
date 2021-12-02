@@ -135,7 +135,7 @@ window.onload = () => {
         filteredChildren.forEach(p => draggable_texts.push(p.innerHTML));
         var yourAnswer=draggable_texts.reduce((previousValue,currentValue)=>previousValue+" "+currentValue).replace('\"','').replace('"','').trim();        
         console.log(yourAnswer);
-        var correctAnswer=localStorage.getItem("answerDoge").replace("  "," ");
+        var correctAnswer=localStorage.getItem("answerDoge").replace("  "," ").trim();
         console.log(correctAnswer);
         if(yourAnswer.toLowerCase()==correctAnswer.toLowerCase()){
             document.getElementById("resultDoge").innerHTML="Respuesta correcta.";
